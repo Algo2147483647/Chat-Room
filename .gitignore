@@ -1,0 +1,64 @@
+./a.bat
+.vs/
+thirdparty/eigen/
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+*.cmake
+Makefile
+
+# Compiled sources
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.sparc
+
+# IDE / Editor settings
+*.swp
+*.swo
+*.swn
+*.idea/
+*.vscode/
+*.codelite
+*.code-workspace
+*.project
+
+# Miscellaneous
+*.log
+*.tmp
+
+# Build directories
+build/
+_build*/
+bin/
+lib/
+out/
+
+# macOS generated
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux generated
+.*~
+.Trash-*
+

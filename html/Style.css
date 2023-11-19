@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(50, 50, 50);
+    background-size:100%;
+}
+.TopBox{
+    background-color: rgb(50, 50, 50);
+    position:fixed;
+    left:0px;
+    top:0px;
+    height: 6%;
+    width: 100%;
+    z-index: 10;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.MainBox{
+    position: absolute;
+    left:20%;
+    right:20%;
+    top: 8%;
+    height: 80%;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 40px;
+    border-radius: 8px;
+
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background-color: #16a085;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    
+    transform: translate3d(-50%,-50%,0) scale(0,0);
+    border-radius: 50%;
+    background-color: #51c7af;
+    transform-origin: center;
+    transition: ease-in-out .1s;
+}
+
+.button:hover::before {
+    transform: translate3d(-50%,-50%,0) scale(15,15);
+}
+
+
+.submit{
+    background-color: #16a085;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.input{
+    background-color: rgba(255, 255, 255, 1);
+    border: 0px solid rgba(51, 51, 51, 0.1);
+    position: relative;
+    z-index: 2;
+
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    color: #bdbdbd;
+
+    overflow: hidden;
+}
